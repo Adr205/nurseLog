@@ -13,6 +13,12 @@ body {
   background-color: #bebebe;
 }
 
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
 /* globales */
 .center {
   text-align: center;
@@ -23,7 +29,7 @@ body {
 }
 /* Login and  Register */
 label {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 input[type="text"],
@@ -47,7 +53,7 @@ input[type="password"] {
 .form-submit {
   margin-top: 1rem;
   padding: 1rem 3rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
 }
 
@@ -130,3 +136,4 @@ input[type="password"] {
     font-size: 1.5rem;
   }
 }
+
