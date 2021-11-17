@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/normalize.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <div class="register-form-container">
+        <h1 class="center">EnferLog</h1>
+
+        <form action="#" method="">
+            <div class="name-container">
+                <div class="form-group">
+                    <label class="input-name" for="firstName">Nombre(s):</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Tu Nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Apellido(s):</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Tu Apellido" required>
+                </div>
+            </div>
+
+            <div class="nurse-container">
+                <div class="block">
+                    <label for="department">Departamento:</label>
+                    <select class="custom-select" name="department" id="department" required>
+                        <option class="custom-option-d" value="" selected disabled>Selecciona tu Dpto</option>
+                        <option class="custom-option" value="1">Departamento 1</option>
+                        <option class="custom-option" value="2">Departamento 2</option>
+                        <option class="custom-option" value="3">Departamento 3</option>
+                        <option class="custom-option" value="4">Departamento 4</option>
+                        <option class="custom-option" value="5">Departamento 5</option>
+                    </select>
+                </div>
+
+                <div class="block">
+                    <label for="shift">Turno:</label>
+                    <select class="custom-select" name="shift" id="shift" required>
+                        <option class="custom-option-d" value="" selected disabled>Selecciona tu turno</option>
+                        <option class="custom-option" value="Matutino">Matutino</option>
+                        <option class="custom-option" value="Vespertino">Vespertino</option>
+                        <option class="custom-option" value="Nocturno">Nocturno</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group nurseID">
+                <label for="id">Numero de Registro:</label>
+                <input type="text" class="form-control" id="id" placeholder="Tu Numero de Registro" required>
+            </div>
+
+            <div class="password-container">
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cpassword">Confirm Password:</label>
+                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm password" required>
+                </div>
+            </div>
+
+            <div class="btn-cont center">
+                <input type="submit" class="btn btn-primary form-submit" value="Registrarme">
+            </div>
+
+            <div class="form-footer center">
+                <span>¿Ya tienes una cuenta?</span>
+                <a href="/index.html">Ingresa</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #bebebe;
+}
+
+/* globales */
+.center {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+/* Login and  Register */
+label {
+  font-size: 1.5em;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 2rem;
+}
+.form-container {
+  width: 30rem;
+  background-color: #dedede;
+  padding: 4rem;
+  border-radius: 1rem;
+
+  position: absolute;
+  top: calc(50% - 15rem);
+  left: calc(50% - 15rem);
+}
+
+.btn-cont {
+  justify-content: center;
+}
+.form-submit {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.form-footer {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+/* Register form */
+
+.register-form-container {
+  width: 30rem;
+  background-color: #dedede;
+  padding: 4rem;
+  border-radius: 1rem;
+
+  position: absolute;
+  top: calc(30% - 15rem);
+  left: calc(50% - 15rem);
+}
+
+.custom-select {
+  height: 4rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.custom-option-d {
+  background-color: #777;
+  color: #eee;
+}
+
+.custom-option {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #8a8a8a;
+  color: #fff;
+}
+
+.name-container {
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+@media (min-width: 550px) {
+  .register-form-container {
+    width: calc(30rem + 20%);
+    background-color: #dedede;
+
+    left: calc(40% - 15rem);
+  }
+
+  .name-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .nurse-container {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+
+  .nurseID {
+    padding-top: 1.5rem;
+  }
+
+  .custom-select {
+    display: block;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
