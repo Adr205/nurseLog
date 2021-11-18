@@ -137,3 +137,125 @@ input[type="password"] {
   }
 }
 
+/* ------ Dashboard ------ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  border-bottom: 1px solid black;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.actions .svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.actions .svg:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.actions .svg:last-child {
+  margin-right: 1rem;
+}
+
+.entry-container {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.entry {
+  margin-bottom: 2rem;
+}
+
+.entry-header,
+.entry-time,
+.entry-nurse {
+  display: flex;
+}
+
+.entry-time,
+.entry-nurse {
+  gap: 0.5rem;
+}
+
+.entry-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #999;
+}
+
+.entry-description {
+  background-color: #aeaeae;
+  padding: 1rem;
+}
+
+.title-main:hover{
+  cursor:default;
+}
+
+@media (min-width: 850px) {
+  .title-main {
+    font-size: 3rem;
+  }
+
+  .entry-container {
+    position: absolute;
+    left: calc(50% - 35rem);
+  }
+
+  .entry {
+    width: 70rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .actions .svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .entry-container {
+    left: calc(50% - 45rem);
+    font-size: 2rem;
+  }
+
+  .entry {
+    width: 90rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .entry-container {
+    left: calc(50% - 50rem);
+  }
+  .entry {
+    width: 100rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .actions {
+    padding-right: 9rem;
+  }
+
+  .entry-container {
+    left: calc(50% - 65rem);
+    font-size: 2.5rem;
+  }
+
+  .entry {
+    width: 130rem;
+  }
+}
