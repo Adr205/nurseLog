@@ -201,8 +201,8 @@ header {
   padding: 1rem;
 }
 
-.title-main:hover{
-  cursor:default;
+.title-main:hover {
+  cursor: default;
 }
 
 @media (min-width: 850px) {
@@ -257,5 +257,80 @@ header {
 
   .entry {
     width: 130rem;
+  }
+}
+
+/* ----- Nueva Entrada ----- */
+
+.newEntry-container {
+  width: calc(32rem);
+  background-color: #dedede;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+
+  position: absolute;
+  left: calc(50% - 16.25rem);
+  top: calc(50% - 15rem);
+}
+.text-entry {
+  width: 100%;
+  height: 15rem;
+  font-size: 1.5rem;
+  resize: none;
+  margin-top: 1rem;
+}
+
+.send-entry {
+  float: right;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+}
+
+@media (min-width: 550px) {
+  .newEntry-container {
+    width: calc(32rem + 20%);
+    left: calc(40% - 16.25rem);
+  }
+}
+
+@media (min-width: 600px) {
+  .newEntry-container {
+    height: 50rem;
+    top: calc(50% - 25rem);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .text-entry {
+    height: 25rem;
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .send-entry {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .newEntry-container {
+    width: calc(32rem + 30%);
+    left: calc(40% - 20rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-entry {
+    font-size: 2.5rem;
+    height: 30rem;
+  }
+
+  .send-entry {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 }
