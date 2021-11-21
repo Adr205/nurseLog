@@ -17,23 +17,23 @@
     <div class="register-form-container">
         <h1 class="center">NurseLog</h1>
 
-        <form action="datos.php" method="post">
+        <form action="../back/datos.php" method="post">
             <div class="name-container">
                 <div class="form-group">
                     <label class="input-name" for="firstName">Nombre(s):</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Tu Nombre" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Tu Nombre" required>
                 </div>
 
                 <div class="form-group">
                     <label for="lastName">Apellido(s):</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Tu Apellido" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Tu Apellido" required>
                 </div>
             </div>
 
             <div class="nurse-container">
                 <div class="block">
                     <label for="department">Departamento:</label>
-                    <select class="custom-select" name="department" id="department" required>
+                    <select class="custom-select" name="department" id="department" name="department" required>
                         <option class="custom-option-d" value="" selected disabled>Selecciona tu Dpto</option>
                         <option class="custom-option" value="1">Departamento 1</option>
                         <option class="custom-option" value="2">Departamento 2</option>
@@ -45,7 +45,7 @@
 
                 <div class="block">
                     <label for="shift">Turno:</label>
-                    <select class="custom-select" name="shift" id="shift" required>
+                    <select class="custom-select" name="shift" id="shift" name="shift" required>
                         <option class="custom-option-d" value="" selected disabled>Selecciona tu turno</option>
                         <option class="custom-option" value="Matutino">Matutino</option>
                         <option class="custom-option" value="Vespertino">Vespertino</option>
@@ -56,18 +56,18 @@
 
             <div class="form-group nurseID">
                 <label for="id">Numero de Registro:</label>
-                <input type="text" class="form-control" id="id" placeholder="Tu Numero de Registro" required>
+                <input type="text" class="form-control" id="id" name="id" placeholder="Tu Numero de Registro" required>
             </div>
 
             <div class="password-container">
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                 </div>
 
                 <div class="form-group">
                     <label for="cpassword">Confirm Password:</label>
-                    <input type="password" class="form-control" id="cpassword" placeholder="Confirm password" required>
+                    <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm password" required>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
 
             <div class="form-footer center">
                 <span>¿Ya tienes una cuenta?</span>
-                <a href="../index.html">Ingresa</a>
+                <a href="../../index.html">Ingresa</a>
             </div>
 
         </form>
