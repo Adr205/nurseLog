@@ -16,15 +16,15 @@
 
     <div class="form-container">
         <h1 class=" title center">NurseLog</h1>
-        <form action="public/pages/login.php" method="post">
+        <form action="public/back/login.php" method="post">
             <div class="form-group">
                 <label for="id">Numero de registro:</label>
-                <input type="text" class="form-control" id="id" placeholder="Numero de registro" required>
+                <input type="text" class="form-control" id="id" name="id" placeholder="Numero de registro" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
             </div>
             <div class="btn-cont center">
                 <input type="submit" class="btn btn-primary form-submit" value="Ingresar">

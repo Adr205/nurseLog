@@ -7,7 +7,9 @@
 
 		if($result)
 			return $result;
-		else
+		else {
+			echo "FALLO";
 			return false;
+		}
 	}
 ?>
