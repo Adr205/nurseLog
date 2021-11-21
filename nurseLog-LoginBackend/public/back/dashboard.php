@@ -5,12 +5,9 @@
 
 
     //TO-DO: aquí se checa quien es la persona que hizo login y se busca su enfermera_id
-    //$user = $_SESSION['usuario'];
-
-    
+    $user = $_SESSION['usuario'];
 
     //Obtener el departamento de la enfermera que hizo login
-    $user = 1;
     $query = "SELECT departamento FROM usuarios WHERE enfermera_id = '$user'";
     $resultado = hacerQuery($query);
     $row = mysqli_fetch_array($resultado);
