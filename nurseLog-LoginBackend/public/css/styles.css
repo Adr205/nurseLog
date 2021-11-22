@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  background-color: #bebebe;
+  
+  background-color: #C6ECAE;
 }
 
 .title {
@@ -35,10 +36,12 @@ label {
 input[type="text"],
 input[type="password"] {
   font-size: 2rem;
+  background-color:#FDEFED;
 }
 .form-container {
   width: 30rem;
-  background-color: #dedede;
+  background-color: #94C9A9;
+  border: 2px solid #5CAD7D;
   padding: 4rem;
   border-radius: 1rem;
 
@@ -66,9 +69,10 @@ input[type="password"] {
 
 .register-form-container {
   width: 30rem;
-  background-color: #dedede;
+  background-color: #94C9A9;
   padding: 4rem;
   border-radius: 1rem;
+  border: 2px solid #5CAD7D;
 
   position: absolute;
   top: calc(30% - 15rem);
@@ -103,7 +107,7 @@ input[type="password"] {
 @media (min-width: 550px) {
   .register-form-container {
     width: calc(30rem + 20%);
-    background-color: #dedede;
+    background-color: #94C9A9;
 
     left: calc(40% - 15rem);
   }
@@ -143,6 +147,7 @@ header {
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
+  background-color: #94C9A9;
 }
 
 .actions {
@@ -153,6 +158,7 @@ header {
   padding-right: 3rem;
   padding-bottom: 1rem;
   width: 100%;
+  background-color: #94C9A9;
 }
 
 .actions .svg {
@@ -194,12 +200,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #999;
+  border: 2px solid #FAA381;
+  background-color: #FCC6B1;
 }
 
 .entry-description {
-  background-color: #aeaeae;
+  background-color: #FDEFED;
   padding: 1rem;
+  border: 2px solid #FAA381;
+  border-top: none;
 }
 
 .title-main:hover {
@@ -265,7 +274,8 @@ header {
 
 .newEntry-container {
   width: calc(32rem);
-  background-color: #dedede;
+  background-color: #C9B9DF;
+  border: 2px solid #9D80C6;
   padding: 2rem;
   border-radius: 1rem;
   margin-top: 2rem;
