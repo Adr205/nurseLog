@@ -4,12 +4,12 @@ CREATE TABLE usuarios (
     nombres varchar(20) NOT NULL,
     apellidos varchar(50) NOT NULL,
     departamento varchar(30),
-    turno varchar(1),
+    turno varchar(30),
     PRIMARY KEY(enfermera_id)
 );
 
 CREATE TABLE entradas ( 
-    entrada_id int NOT NULL, 
+    entrada_id int NOT NULL AUTO_INCREMENT, 
     enfermera_id int NOT NULL, 
     fecha datetime NOT NULL, 
     cuerpo text(16383), 
